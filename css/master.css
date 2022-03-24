@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400&family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+--white:#ffffff;
+
+}
+/************************************* MEDIA QUERIES*********************************************/
+
+@media screen and (max-width: 767px) {
+  
+  /* .bg-img{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;   
+ } */
+ 
+ 
+
+li .logo{ width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+ .nav-bar .nav-list {
+  
+  width:100%;
+ height:10%;
+  padding:10px;
+ flex-flow:wrap;   
+margin-top:0;
+
+align-content: center;
+/* flex-grow: 1; */
+ 
+ }
+ 
+ h1.intro-header {
+  font-size: 4rem;
+  margin: 15% 0 0;
+}
+
+  .intro-message{
+    text-align:center;
+    margin: 8% 2%;
+  }
+
+   /* .about-me-header
+  {
+    background-color: red;
+    width:100vw;
+    
+  }   */
+  
+  .carousel-inner{
+    margin-top: 20%;
+  }
+  
+  
+
+  .form-container form{
+    /* padding: 0 20px 200px 20px; */
+    width:100vw;
+    }
+    
+      .container {
+        width: 100vw;
+        padding-bottom: 350px;
+      }
+    
+      h1.about-me-header {
+        width: 100vw;
+    } 
+
+ }
+ 
+
+ 
+
+
+
+
+.bg-img{
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url("../images/bg-img.jpg");
+  width:100%;
+  height:100vh;
+  background-size: contain;
+  
+  
+  /* background-image: rgba(0,0,0,0,0); */
+  /* background-position: top right; */
+  }
+.bg{
+  background-color: #000;
+}
+  /******************************** INTRODUCTION **************************************/
+  .msg-flex-box-cont{
+    display:flex;
+    flex-flow: column;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+   }
+
+   
+  .intro-header{
+    color:var(--white);
+    font-size: 5rem; 
+    text-align: center;
+   }
+
+   .intro-message{
+    color:var(--white);
+    max-width: 30rem;
+  }
+
+  
+
+   
+  /* html::before{background-color: rgba(0,0,0,0,6);} */
+/*-------------------------------------------NAVIGATION-BAR----------------------------------------------------------------------*/
+
+.logo{
+  width:60px;
+  height:60px;
+ 
+  position:absolute;
+  left:20px;
+  top:25px;
+}
+.nav-bar .nav-list {
+  display:flex;
+  gap:2em;
+  position:fixed;
+  align-items: center;
+  justify-content: center;
+  
+}
+.nav-list{
+  list-style: none;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  width:100%;
+  padding:30px;
+  
+}
+.nav-list > li > a{
+  text-decoration:none;
+  color:hsl(186, 16%, 87%);
+  
+  }
+
+  .nav-list > li > a:hover{ 
+    border-bottom:1px solid rgb(236, 0, 0);
+
+  }
+
+  .container-items{
+    width:90%;
+   }
+
+    /*************************************   FORM     **************************************************/
+
+
+        
+        .contact-header{
+          margin-top: -10%;
+          padding-bottom: 20px;
+          font-size: 2rem;
+          color:var(--white);
+        }
+        
+        form{
+          color:var(--white); 
+        height:100vh;
+         width: 50vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-flow:column;
+         padding:20px;
+         background: rgba(27,31,34,0.80); 
+         font-size: 1rem;
+       }
+    
+.form-item, input[type=text], textarea{
+   padding:2%; 
+  width:70%;
+  margin-bottom: 0;
+}
+
+input[type=text], textarea{
+  background: rgba(27,31,34,0.80); 
+  border: 1px solid var(--white);
+border-radius: 3px;
+}
+
+
+.submit-btn{
+  margin-top: 40px;
+  font-size: 1rem;
+  width: 70%;
+  padding:5px;
+  border-radius: 3px;
+  border: none;
+}
+
+.submit-btn:hover{
+  cursor:pointer;
+  background-color:rgba(27,31,34,0.80);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+/********************************************ABOUT*****************************************************/
+.about-me{float:right;
+ margin-top:-30%;
+}
+
+.about-me p, .about-me-header{
+  background-color:rgba(175, 180, 184, 0.8); 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow:column;
+  
+  }
+  p{line-height: 2rem;
+  text-align: center;
+  padding:20px;}
+
+  .about-me-header{
+    padding:40px;
+    font-size: 2rem;
+    margin-top: 10%;
+  } 
+
+  @media screen and (min-width:764px){
+    .about-me p, .about-me-header{
+      background-color:rgba(175, 180, 184, 0.8); 
+      width: 50vw;
+      margin-top: 0;
+      }
+      
+     p.about-me-msg{
+        margin:0;
+      }
+ .contact-header{
+   margin-top: 15%;
+      
+  }
+}
+  
+  
+
+  /************************************** CARROUSEL *******************************************/
+
+  .container {
+  width:100vw; 
+   padding-top: 90px;
+   overflow: hidden;
+  
+} 
+
+
+
+   /* ***************************************FOOTER******************************************** */
+
+   .footer{background-color: #000;
+  color:#fff;
+  text-align: center;
+  
+   }
+
+   .footer-icon{
+     margin:2%;
+     padding: 1%;
+     font-size: 2rem;
+   }
+   .footer-icon:hover{
+     color: black;
+     background-color: white;
+     border-radius: 30%;
+     cursor:pointer;
+   }
+   
+   .footer-p{
+     font-size: x-small;
+     margin:0;
+     padding-bottom:2px;
+   }
